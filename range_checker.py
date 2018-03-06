@@ -1,6 +1,7 @@
 ### Example execution
 ### >python range_checker.py ip_login_records.csv metadata.csv 2018-01-01 output
 ### ip_login_records.csv must be a csv with columns: Status, Source IP, Login Time (Central Daylight Time)
+### metadata.csv must have 'IP Start Address' and 'IP End Addresss' as oct strings
 ### Source IP MUST be oct string
 
 import sys, time, pprint, re
