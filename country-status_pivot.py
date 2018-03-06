@@ -1,4 +1,4 @@
-### FIRST ARG MUST BE CSV WITH COLUMNS: 'Source IP', 'Login Time (Central Daylight Time)'
+### FIRST ARG MUST BE CSV WITH COLUMNS: 'Source IP', 'Login Time (Central Daylight Time)',
 ###  					'Status', 'Country'
 ### You will get an output CSV with the pivot table
 
