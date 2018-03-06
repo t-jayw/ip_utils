@@ -1,5 +1,5 @@
-### FIRST ARG MUST BE CSV WITH COLUMNS: 'Source IP', 'Login Time (Central Daylight Time)',
-###  					'Status', 'Country'
+### FIRST ARG MUST BE CSV CONTAINING (at least) COLUMNS: 
+###	'Source IP', 'Login Time (Central Daylight Time)', 'Status', 'Country'
 ### You will get an output CSV with the pivot table
 
 import sys, time, pprint, re
