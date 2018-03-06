@@ -2,6 +2,9 @@
 ###	'Source IP', 'Login Time (Central Daylight Time)', 'Status', 'Country'
 ### You will get an output CSV with the pivot table
 
+### Example execution:
+### > python country-status_pivot csv_of_ip_logins_like_mentioned_above.csv 'Restricted IP' 2018-01-01 outputfileheader
+
 import sys, time, pprint, re
 import pandas as pd
 import numpy as np
