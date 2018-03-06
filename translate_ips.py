@@ -3,14 +3,12 @@
 ### ips.csv MUST BE one column titled 'Source IPs'
 ### the second argument MUST BE to_dec or to_oct depending on direction of translation
 
-
 import sys, time
 import pandas as pd
 import numpy as np
 import argparse as ap
 from ipaddress import IPv4Address as ipv4
 from ipaddress import AddressValueError
-
 
 def ip_to_dec(ipstring):
 	"""convert an octet ip into decimal
