@@ -1,3 +1,8 @@
+### Example execution
+### >python range_checker.py ip_login_records.csv metadata.csv 2018-01-01 output
+### ip_login_records.csv must be a csv with columns: Status, Source IP, Login Time (Central Daylight Time)
+### Source IP MUST be oct string
+
 import sys, time, pprint, re
 import pandas as pd
 import numpy as np
@@ -146,6 +151,7 @@ def range_check(ip_file, meta_file, date_str, outputs, test = False):
 	print('\n\nWriting to files...')
 	meta_df = pd.DataFrame(oct_meta_range.items())
 	log = "Errors: %i\n Completed: %i\n"
+	log += "Command: %s\n"%(str(sys.argv))
 	names = ['metaRangeCounts.csv', 'ipValCount.csv']
 	writeouts = [meta_df, val_counts]
 	files = {k:v for (k,v) in zip(names, writeouts)}
