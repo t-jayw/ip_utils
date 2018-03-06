@@ -1,3 +1,7 @@
+### FIRST ARG MUST BE CSV WITH COLUMNS: 'Source IP', 'Login Time (Central Daylight Time)'
+###  					'Status', 'Country'
+### You will get an output CSV with the pivot table
+
 import sys, time, pprint, re
 import pandas as pd
 import numpy as np
