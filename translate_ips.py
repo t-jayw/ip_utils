@@ -1,10 +1,16 @@
-import sys, time, pprint, re
+### Example execution:
+### >python translate_ips.py ips.csv [to_dec | to_oct] output
+### ips.csv MUST BE one column titled 'Source IPs'
+### the second argument MUST BE to_dec or to_oct depending on direction of translation
+
+
+import sys, time
 import pandas as pd
 import numpy as np
 import argparse as ap
 from ipaddress import IPv4Address as ipv4
 from ipaddress import AddressValueError
-from time import sleep
+
 
 def ip_to_dec(ipstring):
 	"""convert an octet ip into decimal
@@ -51,4 +57,4 @@ if __name__ == '__main__':
   parser.add_argument('-t','--test', action="store_true")
   args = parser.parse_args()
 
-  translate_ips(args.ips, direction, out)
+  translate_ips(args.ips, args.direction, args.out)
